@@ -47,21 +47,25 @@ public class PlayerMove : MonoBehaviour
         if (verticalInput > 0.1f)
         {
             inputVector.z = +1;
+            Debug.Log("Going Straight");
         }
 
         if (verticalInput < -0.1f)
         {
             inputVector.z = -1;
+            Debug.Log("Going Back");
         }
 
         if (horizonrtalInput < -0.1f)
         {
             inputVector.x = -1;
+            Debug.Log("Going Left");
         }
 
         if (horizonrtalInput > 0.1f)
         {
             inputVector.x = +1;
+            Debug.Log("Going Right");
         }
 
         inputVector = inputVector.normalized;
