@@ -10,18 +10,18 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody player_rb;
 
-    public float gravity;
+    //public float gravity;
 
     private float horizonrtalInput;
     private float verticalInput;
 
     private bool isRunning;
 
-    private bool isGrounded;
+    //private bool isGrounded;
 
-    public LayerMask groundLayer;
+    //public LayerMask groundLayer;
 
-    private float raycastDistance = 0.05f;
+    //private float raycastDistance = 0.05f;
 
     public Transform groundChecker;
 
@@ -47,25 +47,25 @@ public class PlayerMove : MonoBehaviour
         if (verticalInput > 0.1f)
         {
             inputVector.z = +1;
-            Debug.Log("Going Straight");
+         
         }
 
         if (verticalInput < -0.1f)
         {
             inputVector.z = -1;
-            Debug.Log("Going Back");
+            
         }
 
         if (horizonrtalInput < -0.1f)
         {
             inputVector.x = -1;
-            Debug.Log("Going Left");
+           
         }
 
         if (horizonrtalInput > 0.1f)
         {
             inputVector.x = +1;
-            Debug.Log("Going Right");
+            
         }
 
         inputVector = inputVector.normalized;

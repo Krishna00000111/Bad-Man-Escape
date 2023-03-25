@@ -22,7 +22,7 @@ public class TribalAI : MonoBehaviour
     //animation triggers
     private bool isRun;
     private bool isAttacking;
-    private bool isWalking;
+    private bool isWalking = false;
     
     //Patroling
     public Vector3 walkPoint;
